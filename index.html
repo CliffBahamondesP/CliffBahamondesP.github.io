@@ -5,52 +5,150 @@
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, initial-scale=1">
-  <title>Mi página académica</title>
+  <meta name="description"
+        content="Página académica personal">
+  <title>Cliff Bahamondes Poblete | Economía</title>
+
   <style>
+    :root {
+      --texto: #252525;
+      --secundario: #58616b;
+      --enlace: #205b90;
+      --borde: #e2e5e8;
+    }
+
     body {
-      font-family: Georgia, serif;
-      max-width: 850px;
-      margin: 60px auto;
+      max-width: 760px;
+      margin: 65px auto;
       padding: 0 24px;
-      line-height: 1.7;
-      color: #263238;
+      background: white;
+      color: var(--texto);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 17px;
+      line-height: 1.65;
     }
-    h1 { margin-bottom: 0; }
-    nav a {
-      margin-right: 20px;
-      color: #24566b;
+
+    h1 {
+      font-size: 2.1rem;
+      line-height: 1.2;
+      margin-bottom: 8px;
     }
-    section { margin-top: 40px; }
+
+    h2 {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      margin-bottom: 6px;
+    }
+
+    p { margin-top: 8px; }
+
+    a {
+      color: var(--enlace);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .afiliacion {
+      color: var(--secundario);
+      margin-top: 0;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin: 28px 0;
+      font-size: 0.95rem;
+    }
+
+    main {
+      border-top: 1px solid var(--borde);
+    }
+
+    section { margin-top: 34px; }
+
+    footer {
+      border-top: 1px solid var(--borde);
+      margin-top: 50px;
+      padding-top: 18px;
+      color: var(--secundario);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        margin: 35px auto;
+        font-size: 16px;
+      }
+      h1 { font-size: 1.8rem; }
+    }
   </style>
 </head>
+
 <body>
+
+<header>
   <h1>Cliff Bahamondes Poblete</h1>
-  <p>
-    Economía · Econometría · Finanzas
-  </p>
-  <p>
+
+  <p class="afiliacion">
+    Departamento de Economía<br>
     Universidad de Santiago de Chile
   </p>
 
-  <nav>
+  <p>
+    Mis intereses académicos se centran en
+    economía financiera, econometría aplicada
+    y métodos cuantitativos para el análisis
+    de fenómenos económicos y financieros.
+  </p>
+
+  <nav aria-label="Navegación principal">
     <a href="#investigacion">Investigación</a>
     <a href="#docencia">Docencia</a>
+    <a href="#cv">CV</a>
     <a href="#contacto">Contacto</a>
   </nav>
+</header>
 
+<main>
   <section id="investigacion">
     <h2>Investigación</h2>
-    <p>Mis principales áreas de investigación.</p>
+    <p>
+      Aquí se presentarán mis publicaciones,
+      documentos de trabajo y proyectos.
+    </p>
   </section>
 
   <section id="docencia">
     <h2>Docencia</h2>
-    <p>Cursos y recursos para estudiantes.</p>
+    <p>
+      Aquí se presentarán mis cursos
+      y materiales docentes.
+    </p>
+  </section>
+
+  <section id="cv">
+    <h2>Currículum académico</h2>
+    <p>CV disponible próximamente.</p>
   </section>
 
   <section id="contacto">
     <h2>Contacto</h2>
-    <p>Información de contacto académico.</p>
+    <p>Departamento de Economía, USACH.</p>
   </section>
+</main>
+
+<footer>
+  <p>
+    Página académica personal ·
+    Universidad de Santiago de Chile
+  </p>
+</footer>
+
 </body>
 </html>
